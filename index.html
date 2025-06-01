@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCENTCRAFT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="/src/asset/logo2.jpg" sizes="32x32" />
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="/src/input.css">
+</head>
+<style>
+    *,
+    body{
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<body class="text-gray-800 font-sans">
+<header class="border-b shadow-sm sticky top-0 bg-white z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <h1 class="bg-black p-2 text-white space-x-px">SCENTCRAFT</h1>
+
+    <nav class="space-x-4 hidden md:flex">
+      <a href="#" class="hover:text-purple-600">Home</a>
+      <a href="#" class="hover:text-purple-600">About</a>
+      <a href="#" class="hover:text-purple-600">Products</a>
+      <img src="/src/asset/shopping_bag_24dp_000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+    </nav>
+
+    <button id="menu-toggle" class="md:hidden focus:outline-none">
+      <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+<div id="mobile-menu"
+  class="md:hidden menu-hidden menu-transition px-4 pb-4">
+  <nav class="space-y-2">
+    <a href="#" class="block text-gray-800 hover:text-purple-600">Home</a>
+    <a href="#" class="block text-gray-800 hover:text-purple-600">About</a>
+    <a href="#" class="block text-gray-800 hover:text-purple-600">Products</a>
+  </nav>
+</div>
+
+
+  <section class="relative bg-[#fdf7f2] overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div class="space-y-6">
+      <p class="text-black font-semibold uppercase tracking-wide">SCENTCRAFT</p>
+      <h1 class="flow text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+        Fragrance For <br />
+        Women And Men
+      </h1>
+      <p class="text-gray-600 max-w-md">
+        Taking inspiration from materials technology used in the manufacturing of footwear,
+        the flexible material is 3D knitted allowing.
+      </p>
+      <button class="bg-indigo-700 hover:bg-indigo-800 text-white px-6 py-3 rounded-md text-lg font-medium">
+        More Products
+      </button>
+
+      <div class="flex items-center space-x-3 bg-white px-4 py-2 rounded-full shadow-md w-fit">
+        <div class="flex -space-x-2">
+          <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/40?img=1" alt="">
+          <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/40?img=2" alt="">
+          <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/40?img=3" alt="">
+        </div>
+        <div class="text-sm text-gray-800">
+          <p class="font-semibold">Our Happy Customer</p>
+          <p class="text-xs text-gray-500">⭐ 4.9 (2568 reviews)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative">
+      <img src="/src/img/parfumhero.png" alt="Perfume bottle with flower" class="bounch opacity w-full w-32 mx-auto" />
+
+      <div class="absolute top-4 right-4 bg-white p-3 rounded-lg shadow-md flex items-center space-x-3">
+        <img src="https://i.pravatar.cc/40?img=5" alt="Emily Jasson" class="w-10 h-10 rounded-full">
+        <div>
+          <p class="font-semibold text-sm">Emily</p>
+          <p class="text-xs text-yellow-500">★★★★★</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="text-center mt-20">
+    <h1 class="font-semibold text-5xl">About US</h1>
+ </div> 
+
+<!-- !BOUT -->
+ <section class=" py-20 px-6">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <!-- Left Image -->
+    <div class="rounded-2xl overflow-hidden shadow-md">
+      <img src="/src/img/original-2e619f26dc1a1e4638a45032df3f8205.webp" alt="Fragrance Bottle" class="w-full object-cover rounded-2xl">
+    </div>
+
+    <!-- Right Content -->
+    <div class="text-gray-800">
+      <h2 class="text-4xl md:text-5xl font-serif font-semibold leading-tight mb-10">
+        ScentCraft is a reflection <br>
+        of personality, style, and <br>
+        mood.
+      </h2>
+
+      <!-- Divider -->
+      <hr class="border-gray-300 mb-10">
+
+      <!-- Features -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <!-- Feature 1 -->
+        <div class="flex items-start space-x-4">
+          <div class="text-orange-500 text-xl">★</div>
+          <p class="text-sm text-gray-600">
+            Our diverse range of perfumes brings together the finest notes crafted by master perfumers.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="flex items-start space-x-4">
+          <div class="text-orange-500 text-xl">◉</div>
+          <p class="text-sm text-gray-600">
+            Step into a realm of elegance and sophistication, and find the scent that truly embodies you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class= py-20 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-extrabold mb-10">Our Services</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Service 1 -->
+      <div class="bg-white p-6 rounded-xl shadow-md space-y-4">
+        <img class="justify-center justify-self-center" src="/src/asset/social_leaderboard_24dp_000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        <h3 class="font-bold text-lg">100% Organic</h3>
+        <p class="text-sm text-gray-600">Never at water me might. On formed merits hunted.</p>
+      </div>
+
+      <div class="p-6 rounded-xl shadow-md space-y-4 relative">
+        <img class="justify-center justify-self-center" src="/src/asset/local_shipping_24dp_000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        <h3 class="font-bold text-lg">Fast Delivery</h3>
+        <p class="text-sm">The chairs have a knitted backrest that conforms.</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="bg-white p-6 rounded-xl shadow-md space-y-4">
+        <img class="justify-center justify-self-center" src="src/asset/workspace_premium_24dp_000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        <h3 class="font-bold text-lg">Natural Ingredients</h3>
+        <p class="text-sm text-gray-600">Much like that of Nike’s Flyknit technology footwear.</p>
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="mt-10">
+      <button class="bg-black text-white px-6 py-3 rounded-md font-medium">
+        View All Services
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="py-20 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <!-- Section Title -->
+    <h2 class="text-3xl font-semibold text-gray-900">New Collection</h2>
+    <div class="w-24 h-1 bg-red-500 mx-auto mt-2 mb-12 rounded-full"></div>
+
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Product 1 -->
+      <div class="space-y-3">
+        <img src="/src/img/Copilot_20250601_210554.png" alt="Viktor & Rolf" class="dark w-full h-auto rounded-lg shadow-md">
+        <p class="text-red-600 text-sm">★★★★★</p>
+        <h3 class="font-medium text-lg text-gray-800">Viktor & Rolf</h3>
+        <p class="text-red-600 text-sm font-semibold hover:underline cursor-pointer">Add to Cart</p>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="space-y-3">
+        <img src="/src/img/Copilot_20250601_205235.png" alt="Yves Saint" class="dark w-full h-auto rounded-lg shadow-md">
+        <p class="text-red-600 text-sm">★★★★★</p>
+        <h3 class="font-medium text-lg text-gray-800">Yves Saint</h3>
+        <p class="text-red-600 text-sm font-semibold">$20.00</p>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="space-y-3">
+        <img src="/src/img/Copilot_20250601_205657.png" alt="Chanel" class="dark w-full h-auto rounded-lg shadow-md">
+        <p class="text-red-600 text-sm">★★★★★</p>
+        <h3 class="font-medium text-lg text-gray-800">Chanel</h3>
+        <p class="text-red-600 text-sm font-semibold">$20.00</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Top Stats Section -->
+<section class="bg-black text-white py-10">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
+    <div>
+      <h3 class="text-3xl font-bold">15+</h3>
+      <p class="text-sm mt-2">International Outlets</p>
+    </div>
+    <div>
+      <h3 class="text-3xl font-bold">20+</h3>
+      <p class="text-sm mt-2">Delicious Flavor</p>
+    </div>
+    <div>
+      <h3 class="text-3xl font-bold">80%</h3>
+      <p class="text-sm mt-2">Happy Clients Worldwide</p>
+    </div>
+    <div>
+      <h3 class="text-3xl font-bold">100%</h3>
+      <p class="text-sm mt-2">Money Back Guarantee</p>
+    </div>
+  </div>
+</section>
+
+<!-- Our Partners Section -->
+<section class="bg-white py-20 px-6">
+    <div class="text-center mb-10 mt-10">
+        <h1 class="text-5xl font-semibold">Become A Partner</h1>
+    </div>
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <!-- Left Text Content -->
+    <div>
+      <h2 class="text-4xl font-extrabold mb-4">Partners</h2>
+      <p class="text-gray-600 mb-6">
+        From the harmonious union between a mixes of cereals flours and legumes flours,
+        a new line of tasty specialities rich in fiber and vegetable.
+      </p>
+      <button class="bg-indigo-700 hover:bg-indigo-800 text-white px-6 py-3 rounded-md font-medium">
+        Explore More
+      </button>
+    </div>
+
+    <!-- Right Logos -->
+    <div class="grid grid-cols-3 gap-4 justify-items-center">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Arista-networks-logo.svg" alt="Arista" class="h-10">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Juniper_Networks_logo.svg" alt="Juniper" class="h-10">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Logitech_logo.png" alt="Logitech" class="h-10">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Bitcoin_logo.svg" alt="Bitcoin" class="h-10">
+    </div>
+  </div>
+</section>
+
+<!-- Testimonial Section -->
+<section class="relative bg-white py-20 px-6">
+
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-extrabold text-[#944732] mb-12">What Our Happy Client Say.</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Testimonial 1 -->
+      <div class="flex items-start bg-white rounded-2xl shadow-md p-6 space-x-4">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Eleanor Pena" class="w-16 h-16 rounded-full object-cover">
+        <div class="text-left">
+          <p class="text-orange-500 text-2xl mb-2">“</p>
+          <p class="text-gray-600 text-sm mb-3">Believing neglected so so allowance existence departure in. In design active temper be uneasy.</p>
+          <p class="text-indigo-800 font-semibold text-xs uppercase">Eleanor Pena</p>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="flex items-start bg-white rounded-2xl shadow-md p-6 space-x-4">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Jeff Chris" class="w-16 h-16 rounded-full object-cover">
+        <div class="text-left">
+          <p class="text-orange-500 text-2xl mb-2">“</p>
+          <p class="text-gray-600 text-sm mb-3">Really boy law county she unable her sister. Feet you off its like like six. In built table.</p>
+          <p class="text-indigo-800 font-semibold text-xs uppercase">Jeff Chris</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arrows -->
+    <div class="flex justify-center mt-10 space-x-4">
+      <button class="w-8 h-8 flex items-center justify-center border-2 rounded-full text-gray-600 hover:bg-gray-100">‹</button>
+      <button class="w-8 h-8 flex items-center justify-center border-2 rounded-full">›</button>
+    </div>
+  </div>
+</section> 
+
+<!-- Newsletter Section -->
+<section class="bg-white py-16">
+  <div class="max-w-xl mx-auto text-center">
+    <h2 class="text-3xl font-extrabold text-[#944732] mb-6">Our Newsletter</h2>
+    <form class="flex flex-col sm:flex-row items-center gap-4 justify-center">
+      <input type="email" placeholder="Enter your email." class="w-full sm:w-auto px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+      <button type="submit" class="bg-[#944732] text-white px-6 py-3 rounded-md font-medium hover:bg-[#784a48]">Subscribe Now</button>
+    </form>
+  </div>
+</section>
+
+<footer class="bg-[#3b1212] text-white py-16 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
+    <!-- Contact Info -->
+    <div class="space-y-6">
+      <div>
+        <h4 class="text-sm font-bold uppercase tracking-wider text-gray-300">Phone</h4>
+        <p class="mt-1 text-sm text-gray-200 italic">+62 111 306 216</p>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold uppercase tracking-wider text-gray-300">Mail</h4>
+        <p class="mt-1 text-sm text-gray-200 italic">marcowibowo163@gmail.com (CEO)</p>
+      </div>
+    </div>
+
+    <!-- Grid Decoration -->
+    <!-- Grid Decoration -->
+<div class="hidden md:block relative">
+  <div class="absolute right-0 bottom-0">
+    <svg width="120" height="120" viewBox="0 0 100 100" class="text-orange-500 opacity-30">
+      <defs>
+        <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+          <path d="M 20 0 L 0 0 0 20" fill="none" stroke="currentColor" stroke-width="0.5"/>
+        </pattern>
+      </defs>
+      <rect width="100" height="100" fill="url(#grid)" />
+    </svg>
+  </div>
+</div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
+
+ 
