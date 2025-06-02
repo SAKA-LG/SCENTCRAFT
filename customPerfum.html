@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCENTCRAFT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="/src/asset/logo2.jpg" sizes="32x32" />
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="/src/input.css">
+</head>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    input[type="checkbox"] + label {
+      display: block;
+      padding: 0.5rem;
+      border: 1px solid #e5e7eb;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    input[type="checkbox"]:checked + label {
+      background-color: #fce7f3;
+      border-color: #ec4899;
+      color: #9d174d;
+    }
+  </style>
+<body class="text-gray-800 font-sans">
+<header class="border-b shadow-sm sticky top-0 bg-white z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <h1 class="bg-[#944732] font-semibold p-2 text-white space-x-px">SCENTCRAFT</h1>
+
+    <nav class="space-x-4 hidden md:flex">
+      <a href="index.html" class="hover:text-purple-600">Home</a>
+      <a href="bussinesPlan.html" class="hover:text-purple-600">Plan</a>
+      <a href="#" class="hover:text-purple-600">About US</a>
+      <img src="/src/asset/shopping_bag_24dp_000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+    </nav>
+
+    <button id="menu-toggle" class="md:hidden focus:outline-none">
+      <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+<div id="mobile-menu"
+  class="md:hidden menu-hidden menu-transition px-4 pb-4">
+  <nav class="space-y-2">
+    <a href="#" class="block text-gray-800 hover:text-purple-600">Home</a>
+    <a href="#" class="block text-gray-800 hover:text-purple-600">Plan</a>
+    <a href="#" class="block text-gray-800 hover:text-purple-600">About US</a>
+  </nav>
+</div>
+
+  <!-- Header -->
+  <div class="bg-[#944732] text-white py-12 text-center shadow-lg">
+    <h1 class="text-5xl font-extrabold tracking-tight">Craft Your Signature Scent</h1>
+    <p class="mt-3 text-xl opacity-90">Select your favorite notes to create a personalized fragrance</p>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-6 py-16 space-y-20">
+    <form class="space-y-20">
+
+      <!-- Top Notes -->
+      <section>
+        <h2 class="text-4xl font-bold text-pink-700 mb-4">🌿 Top Notes</h2>
+        <p class="text-gray-600 mb-6 text-lg">Light and quick to evaporate – the first impression of your perfume.</p>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+          <!-- Top Notes List with Checkboxes -->
+          <div><input type="checkbox" id="bergamot" value="Bergamot"><label for="bergamot">Bergamot</label></div>
+          <div><input type="checkbox" id="lemon" value="Lemon"><label for="lemon">Lemon</label></div>
+          <div><input type="checkbox" id="lime" value="Lime"><label for="lime">Lime</label></div>
+          <div><input type="checkbox" id="grapefruit" value="Grapefruit"><label for="grapefruit">Grapefruit</label></div>
+          <div><input type="checkbox" id="orange" value="Orange"><label for="orange">Orange</label></div>
+          <div><input type="checkbox" id="mandarin" value="Mandarin"><label for="mandarin">Mandarin</label></div>
+          <div><input type="checkbox" id="neroli" value="Neroli"><label for="neroli">Neroli</label></div>
+          <div><input type="checkbox" id="petitgrain" value="Petitgrain"><label for="petitgrain">Petitgrain</label></div>
+          <div><input type="checkbox" id="yuzu" value="Yuzu"><label for="yuzu">Yuzu</label></div>
+          <div><input type="checkbox" id="spearmint" value="Spearmint"><label for="spearmint">Spearmint</label></div>
+        </div>
+      </section>
+
+      <!-- Middle Notes -->
+<section>
+  <h2 class="text-4xl font-bold text-pink-700 mb-4">🌸 Middle Notes</h2>
+  <p class="text-gray-600 mb-6 text-lg">Heart notes – muncul setelah top notes memudar, karakter utama parfum.</p>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+    <div><input type="checkbox" id="jasmine" value="Jasmine"><label for="jasmine">Jasmine</label></div>
+    <div><input type="checkbox" id="rose" value="Rose"><label for="rose">Rose</label></div>
+    <div><input type="checkbox" id="lavender" value="Lavender"><label for="lavender">Lavender</label></div>
+    <div><input type="checkbox" id="geranium" value="Geranium"><label for="geranium">Geranium</label></div>
+    <div><input type="checkbox" id="ylang-ylang" value="Ylang-ylang"><label for="ylang-ylang">Ylang-ylang</label></div>
+    <div><input type="checkbox" id="magnolia" value="Magnolia"><label for="magnolia">Magnolia</label></div>
+    <div><input type="checkbox" id="lily-of-the-valley" value="Lily of the Valley"><label for="lily-of-the-valley">Lily of the Valley</label></div>
+    <div><input type="checkbox" id="peony" value="Peony"><label for="peony">Peony</label></div>
+    <div><input type="checkbox" id="orchid" value="Orchid"><label for="orchid">Orchid</label></div>
+    <div><input type="checkbox" id="violet" value="Violet"><label for="violet">Violet</label></div>
+  </div>
+</section>
+
+<!-- Base Notes -->
+<section>
+  <h2 class="text-4xl font-bold text-pink-700 mb-4">🌲 Base Notes</h2>
+  <p class="text-gray-600 mb-6 text-lg">Heavy and long-lasting – foundation of the perfume.</p>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+    <div><input type="checkbox" id="vanilla" value="Vanilla"><label for="vanilla">Vanilla</label></div>
+    <div><input type="checkbox" id="amber" value="Amber"><label for="amber">Amber</label></div>
+    <div><input type="checkbox" id="musk" value="Musk"><label for="musk">Musk</label></div>
+    <div><input type="checkbox" id="patchouli" value="Patchouli"><label for="patchouli">Patchouli</label></div>
+    <div><input type="checkbox" id="sandalwood" value="Sandalwood"><label for="sandalwood">Sandalwood</label></div>
+    <div><input type="checkbox" id="cedarwood" value="Cedarwood"><label for="cedarwood">Cedarwood</label></div>
+    <div><input type="checkbox" id="oud" value="Oud"><label for="oud">Oud (Agarwood)</label></div>
+    <div><input type="checkbox" id="vetiver" value="Vetiver"><label for="vetiver">Vetiver</label></div>
+    <div><input type="checkbox" id="tonka-bean" value="Tonka Bean"><label for="tonka-bean">Tonka Bean</label></div>
+    <div><input type="checkbox" id="leather" value="Leather"><label for="leather">Leather</label></div>
+  </div>
+</section>
+
+
+      <!-- Middle and Base Notes can be completed similarly -->
+
+      <div class="text-center">
+        <button type="submit" class="mt-10 bg-pink-600 text-white px-10 py-4 rounded-full text-xl hover:bg-pink-700 shadow-md transition">Create My Perfume</button>
+      </div>
+    </form>
+  </main>
+
+<footer class="bg-[#3b1212] text-white py-16 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
+    <!-- Contact Info -->
+    <div class="space-y-6">
+      <div>
+        <h4 class="text-sm font-bold uppercase tracking-wider text-gray-300">Phone</h4>
+        <p class="mt-1 text-sm text-gray-200 italic">+62 111 306 216</p>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold uppercase tracking-wider text-gray-300">Mail</h4>
+        <p class="mt-1 text-sm text-gray-200 italic">marcowibowo163@gmail.com (CEO)</p>
+      </div>
+    </div>
+
+<div class="hidden md:block relative">
+  <div class="absolute right-0 bottom-0">
+    <svg width="120" height="120" viewBox="0 0 100 100" class="text-orange-500 opacity-30">
+      <defs>
+        <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+          <path d="M 20 0 L 0 0 0 20" fill="none" stroke="currentColor" stroke-width="0.5"/>
+        </pattern>
+      </defs>
+      <rect width="100" height="100" fill="url(#grid)" />
+    </svg>
+  </div>
+</div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
+
+ 
