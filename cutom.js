@@ -7,15 +7,15 @@ document.getElementById("startBtn").addEventListener("click", () => {
   document.getElementById("middleNoteText").textContent = middleNotes.join(", ") || "-";
   document.getElementById("baseNoteText").textContent = baseNotes.join(", ") || "-";
 
-  // Sembunyikan form dan tombol start
+ 
   document.getElementById("noteForm").classList.add("hidden");
 
-  // Tampilkan hasil
+ 
   const result = document.getElementById("result");
   result.classList.remove("hidden");
   setTimeout(() => {
     result.classList.remove("opacity-0", "translate-y-5");
-  }, 10); // Trigger animasi
+  }, 10); 
 });
 
 function getCheckedValues(ids) {
@@ -26,14 +26,25 @@ function getCheckedValues(ids) {
 }
 
 document.getElementById("resetBnt").addEventListener("click", () => {
-  // Reset form
+
   document.getElementById("noteForm").reset();
   document.getElementById("noteForm").classList.remove("hidden");
 
-  // Sembunyikan hasil
+
   const result = document.getElementById("result");
   result.classList.add("opacity-0", "translate-y-5");
   setTimeout(() => {
     result.classList.add("hidden");
   }, 500);
+});
+
+
+document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+  checkbox.addEventListener('change', (e) => {
+    const label = e.target.nextElementSibling; 
+    if (e.target.checked) {
+      label.classList.add('checkbox-animate');
+      setTimeout(() => label.classList.remove('checkbox-animate'), 300);
+    }
+  });
 });
